@@ -1,0 +1,13 @@
+{
+  "name": "cousine-web",
+  "version": "1.0.0",
+  "description": "Chat",
+  "scripts": {
+    "start": "node server"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "jquery": "^3.5.1",
+    "socket.io": "^1.7.4"
+  }
+}

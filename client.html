@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+        <script src="/static/jquery/jquery.min.js"></script>
+        <link rel="stylesheet" href="/static/client.css">
+        <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+        <script src="/static/client.js"></script>
+    </head>
+    <body onload="init()">
+        <div class="sidebar">
+            <h2>Chat</h2>
+            <div class="textchat">
+                <textarea class="chat" readonly placeholder="There are no messages yet"></textarea>
+                <div class="chat-bottom">
+                    <textarea class="message" placeholder="Write a message..." onkeydown="messageKey(event)"></textarea>
+                    <button class="send" onclick="sendTextMessage()">Send</button>
+                </div>
+            </div>
+        </div>
+        <div class="middlebox">
+            <h2>Users</h2>
+            <div class="clients"></div>
+        </div>
+        <div class="rightbox">
+            
+        </div>
+    </body>
+</html>
